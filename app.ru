@@ -3,7 +3,7 @@ class App
     [
       200,
       {},
-      ['Hello']
+      ['Hello, Ruby ', RUBY_VERSION.to_s, "\n"]
     ]
   end
 end
