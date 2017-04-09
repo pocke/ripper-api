@@ -3,7 +3,6 @@ require 'json'
 
 class App
   def call(env)
-    p env
     [
       200,
       {},
