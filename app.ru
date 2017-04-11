@@ -3,10 +3,11 @@ require 'json'
 
 class App
   def call(env)
+    input = env['rack.input'].read.force_encoding(Encoding::UTF_8)
     [
       200,
       {},
-      [response_body(env['rack.input'].read)]
+      [response_body(input)]
     ]
   end
 
