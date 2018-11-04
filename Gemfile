@@ -4,6 +4,6 @@ end
 
 source 'https://rubygems.org'
 
-gem 'puma'
+gem 'puma', '< 3.12'
 gem 'puma-heroku'
 gem 'foreman'
